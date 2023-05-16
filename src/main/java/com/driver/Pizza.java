@@ -56,17 +56,17 @@ public class Pizza {
     }
 
     public String getBill(){
-        String bill="Base Price of The Pizza:" + price + "\n";
+        String bill="Base Price Of The Pizza: " + price + "\n";
         if(ischeeseAdded){
-            bill=bill+"extra Cheese Added:"+cheesePrice+" \n";
+            bill=bill+"Extra Cheese Added: "+cheesePrice+" \n";
         }
         if(istoppingsAdded){
-            bill=bill+"Extra Toppings Added "+extratoppings+"\n";
+            bill=bill+"Extra Toppings Added: "+extratoppings+"\n";
         }
         if(istakeawayAdded){
-            bill = bill + "Paper bag Added" +takeAway +"\n";
+            bill = bill + "Paper Bag Added: " +takeAway +"\n";
         }
-        bill=bill+"total Price: "+price +"\n";
+        bill=bill+"Total Price: "+total +"\n";
         return bill;
     }
 }
